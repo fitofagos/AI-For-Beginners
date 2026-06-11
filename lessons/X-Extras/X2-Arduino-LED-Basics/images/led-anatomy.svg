@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="420" viewBox="0 0 760 420" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <radialGradient id="ledGlow" cx="50%" cy="35%" r="70%">
+      <stop offset="0%" stop-color="#ff8a80"/>
+      <stop offset="60%" stop-color="#e53935"/>
+      <stop offset="100%" stop-color="#b71c1c"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="760" height="420" fill="#fdfdfd" stroke="#dddddd"/>
+  <text x="380" y="38" text-anchor="middle" font-size="24" font-weight="bold" fill="#263238">Know your LED before wiring it</text>
+
+  <!-- LED body -->
+  <g>
+    <!-- dome -->
+    <path d="M 320 110 A 60 60 0 0 1 440 110 L 440 200 L 320 200 Z" fill="url(#ledGlow)" stroke="#8e0000" stroke-width="2"/>
+    <!-- flat-edge rim -->
+    <rect x="310" y="200" width="140" height="14" rx="4" fill="#c62828" stroke="#8e0000" stroke-width="2"/>
+    <!-- flat spot on cathode side -->
+    <line x1="450" y1="200" x2="450" y2="214" stroke="#37474f" stroke-width="5"/>
+
+    <!-- legs -->
+    <line x1="350" y1="214" x2="350" y2="360" stroke="#9e9e9e" stroke-width="7"/> <!-- long leg -->
+    <line x1="410" y1="214" x2="410" y2="320" stroke="#9e9e9e" stroke-width="7"/> <!-- short leg -->
+  </g>
+
+  <!-- Anode label -->
+  <g>
+    <line x1="350" y1="345" x2="255" y2="345" stroke="#2e7d32" stroke-width="2"/>
+    <circle cx="350" cy="345" r="4" fill="#2e7d32"/>
+    <text x="245" y="330" text-anchor="end" font-size="19" font-weight="bold" fill="#2e7d32">ANODE (+)</text>
+    <text x="245" y="352" text-anchor="end" font-size="15" fill="#455a64">LONG leg</text>
+    <text x="245" y="372" text-anchor="end" font-size="15" fill="#455a64">toward the Arduino pin</text>
+  </g>
+
+  <!-- Cathode label -->
+  <g>
+    <line x1="410" y1="305" x2="555" y2="305" stroke="#c62828" stroke-width="2"/>
+    <circle cx="410" cy="305" r="4" fill="#c62828"/>
+    <text x="565" y="290" font-size="19" font-weight="bold" fill="#c62828">CATHODE (−)</text>
+    <text x="565" y="312" font-size="15" fill="#455a64">SHORT leg</text>
+    <text x="565" y="332" font-size="15" fill="#455a64">connects toward GND</text>
+  </g>
+
+  <!-- Flat spot label -->
+  <g>
+    <line x1="452" y1="207" x2="555" y2="180" stroke="#37474f" stroke-width="2"/>
+    <text x="565" y="172" font-size="15" fill="#37474f" font-weight="bold">Flat edge on the rim</text>
+    <text x="565" y="192" font-size="15" fill="#455a64">= cathode (−) side</text>
+  </g>
+
+  <!-- Memory tip -->
+  <rect x="60" y="60" width="215" height="74" rx="10" fill="#fff8e1" stroke="#f9a825" stroke-width="2"/>
+  <text x="167" y="88" text-anchor="middle" font-size="15" font-weight="bold" fill="#795548">Memory trick</text>
+  <text x="167" y="110" text-anchor="middle" font-size="14" fill="#5d4037">Long leg = pLus (+)</text>
+  <text x="167" y="128" text-anchor="middle" font-size="14" fill="#5d4037">Short leg = minuS (−)</text>
+</svg>
