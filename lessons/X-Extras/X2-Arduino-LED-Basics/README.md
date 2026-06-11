@@ -68,6 +68,16 @@ void loop() {
 
 If everything is wired correctly, the LED blinks once per second. 🎉
 
+## Watch it in action
+
+Here is the whole project — let's call it **LumaNode** — animated. When the sketch sets pin 13 to `HIGH`, current (orange dots) flows from the pin, through the resistor and the LED, back to GND, and the LED lights up. When the pin goes `LOW`, the current stops and the LED goes dark:
+
+![Animation of the blink circuit: current flows and the LED lights while pin 13 is HIGH, then stops when it is LOW](./images/led-blink-animation.svg)
+
+> The animation is also available as a [GIF](./images/led-blink-animation.gif) if your viewer doesn't play animated SVGs.
+>
+> *Note: the dots show conventional current (from + to −). Physical electrons actually drift the opposite way — but circuits are always read using conventional current.*
+
 ## It doesn't work — now what?
 
 | Symptom | Most likely cause | Fix |
